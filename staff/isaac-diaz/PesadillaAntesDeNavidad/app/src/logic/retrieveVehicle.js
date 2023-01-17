@@ -1,5 +1,5 @@
 import { errors } from 'com'
-const { LengthError } = errors
+const { NotFoundError, UnexpectedError, LengthError, AuthError } = errors
 
 export default function retrieveVehicle(token, vehicleId) {
     if (typeof token !== 'string') throw new TypeError('token is not a string')
@@ -14,17 +14,33 @@ export default function retrieveVehicle(token, vehicleId) {
         xhr.onload = function () {
             const { status, responseText: json } = xhr
 
-            if (status >= 500) {
+            if (status === 200) {
+                const vehicle = JSON.parse(json)
+                resolve(vehicle)
+
+            } else if (status === 400) {
                 const { error } = JSON.parse(json)
 
-                reject(new Error(error))
+                if (error.includes('is not a'))
+                    reject(new TypeError(error))
 
-                return
-            }
+                else if (error.includes('empty'))
+                    reject(new LengthError(error))
 
-            const vehicle = JSON.parse(json)
+            } else if (status === 401) {
+                const { error } = JSON.parse(json)
+                reject(new AuthError(error))
 
-            resolve(vehicle)
+            } else if (status === 404) {
+                const { error } = JSON.parse(json)
+                reject(new NotFoundError(error))
+
+            } if (status < 500) {
+                reject(new UnexpectedError('client error'))
+            
+            } else 
+                reject(new UnexpectedError('server error'))
+
         }
 
         xhr.open('GET', `http://localhost/vehicles/${vehicleId}`)

@@ -32,7 +32,7 @@ export default function({ onClose }) {
             <input className='rounded-lg' name='model' type='text' id='model' placeholder='input your model'></input>
             <label htmlFor='fuelType'>Fuel type</label>
             <select className='rounded-lg' name='fuelType' id='fuelType'>
-                <option value='gas'>gasolina</option>
+                <option value='gasolina'>gasolina</option>
                 <option value='diesel'>diesel</option>                
             </select>
             <label htmlFor='license'>Lisence</label>

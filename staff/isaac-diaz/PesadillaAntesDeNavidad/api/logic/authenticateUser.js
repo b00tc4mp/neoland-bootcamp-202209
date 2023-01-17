@@ -1,6 +1,6 @@
-const { 
+const {
     errors: {
-        LengthError, FormatError, AuthError, NotFoundError, 
+        LengthError, FormatError, AuthError, NotFoundError,
     },
     regex: {
         IS_EMAIL_REGEX, HAS_SPACES_REGEX
@@ -8,6 +8,7 @@ const {
 } = require('com')
 
 const { User } = require('../models')
+const { compare } = require('bcryptjs')
 
 /**
 * Authtenticates a User
@@ -29,10 +30,13 @@ function authenticateUser(email, password) {
             if (!user)
                 throw new NotFoundError('user not registered')
 
-            if (user.password !== password)
-                throw new AuthError('wrong password')
+            return compare(password, user.password)
+                .then(match => {
+                    if (!match)
+                        throw new AuthError('wrong password')
 
-            return user.id
+                    return user.id
+                })
         })
 }
 

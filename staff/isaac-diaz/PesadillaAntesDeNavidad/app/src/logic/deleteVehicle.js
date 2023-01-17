@@ -1,4 +1,5 @@
 import { errors } from 'com'
+import { AuthError, NotFoundError, UnexpectedError } from 'com/errors'
 const { LengthError } = errors
 
 export default function deleteVehicle(token, vehicleId) {
@@ -11,18 +12,31 @@ export default function deleteVehicle(token, vehicleId) {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest()
 
-        xhr.onload = function() {
+        xhr.onload = function () {
             const { status, responseText: json } = xhr
 
-            if (status >= 500) {
+            if (status === 204) {
+                resolve()
+
+            } else if (status === 400) {
                 const { error } = JSON.parse(json)
 
-                reject(new Error(error))
+                if (error.includes('is not a'))
+                    reject(new TypeError(error))
 
-                return
-            }
+                else if (error.includes('empty'))
+                    reject(new LengthError(error))
 
-            resolve()
+            } else if (status === 404) {
+                const { error } = JSON.parse(json)
+                reject(new NotFoundError(error))
+
+            } else if (status < 500) {
+                reject(new UnexpectedError('client error'))
+
+            } else
+                reject(new UnexpectedError('server error'))
+                
         }
 
         xhr.onerror = () => reject(new Error('connection error'))

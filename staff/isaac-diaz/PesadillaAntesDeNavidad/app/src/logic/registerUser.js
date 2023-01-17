@@ -44,7 +44,7 @@ export default function registerUser(name, email, password) {
                 const { error } = JSON.parse(json)
 
                 reject(new ConflictError(error))
-            } else if (status <= 500)
+            } else if (status < 500)
                 reject(new UnexpectedError('client error'))
             else
                 reject(new UnexpectedError('server error'))

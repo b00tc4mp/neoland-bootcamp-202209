@@ -3,7 +3,7 @@ export default function calculateNextItvDate(licenseDate, lastItvDate) {
     const yearNow = now.getFullYear()
 
     const licenseYear = licenseDate.getFullYear()
-    const lastInspectionYear = lastItvDate.getFullYear()
+    const lastInspectionYear = lastItvDate && lastItvDate.getFullYear()
 
     const age = yearNow - licenseYear
 

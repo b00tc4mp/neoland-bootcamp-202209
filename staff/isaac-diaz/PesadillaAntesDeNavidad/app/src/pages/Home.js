@@ -70,17 +70,16 @@ function Home() {
 
 
     const handleCreatedVehicle = () => {
-        // TODO evaluar si queremos que cuando se cree un vehículo nuevo se haga alguna otra cosa
+        
         closeCreateVehicle()
     }
-    //Hacer el delete(revisar logicas y api)
-
-    return <main className='h-80 overflow-y-auto mt-16 min-h-screen overflow-hidden bg-white dark:bg-black text-black dark:text-white m-6'>
+   
+   return <main className='h-80 w-screen overflow-y-auto mt-16 min-h-screen overflow-hidden bg-black dark:bg-black text-black dark:text-white m-6'>
         {vehicles && !createVehicleVisible && vehicles.length > 0 && vehicles.map(vehicle => <TarjetVehicle vehicle={vehicle} refreshVehicles={vehiclesToRetrieve} />)}
         {createVehicleVisible && <CreateVehicle onClose={closeCreateVehicle} onCreated={handleCreatedVehicle} />}
         {user && <Header userName={user.name} />}
-        <div className='flex justify-center'>
-            {!createVehicleVisible && <button onClick={openCreateVehicle} className='bg-pink-600 hover:bg-purple-600 duration-700 ease-in-out hover:scale-150 hover:shadow-rose-800 p-12 border rounded-full text-xl'>Add</button>}
+        <div className='flex justify-center items-center'>
+            {!createVehicleVisible && <button onClick={openCreateVehicle} className='bg-pink-600 hover:bg-purple-600 duration-700 ease-in-out hover:scale-75 hover:shadow-rose-800 p-12 border rounded-full text-xl'>Add</button>}
         </div>
     </main>
 }

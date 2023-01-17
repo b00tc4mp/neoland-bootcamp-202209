@@ -14,13 +14,13 @@
  * @param {*} fuelType 
  * @returns 
  */
- export default function calculateNextCheckOil(lastOilCheckKms, lastOilCheckDate, licenseDate, fuelType) {
+ export default function calculateNextCheckOil(lastOilCheckKms = undefined, lastOilCheckDate = undefined, licenseDate, fuelType) {
     const licenseDay = licenseDate.getDate()
     const licenseMonth = licenseDate.getMonth()
     const licenseYear = licenseDate.getFullYear()
-    const lastInspectDay = lastOilCheckDate.getDate()
-    const lastInspectMonth = lastOilCheckDate.getMonth()
-    const lastInspectYear = lastOilCheckDate.getFullYear()
+    const lastInspectDay = lastOilCheckDate && lastOilCheckDate.getDate()
+    const lastInspectMonth = lastOilCheckDate && lastOilCheckDate.getMonth()
+    const lastInspectYear = lastOilCheckDate && lastOilCheckDate.getFullYear()
 
     if (fuelType === 'gasolina') {
         if (!lastOilCheckDate) {

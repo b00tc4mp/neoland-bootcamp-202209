@@ -15,6 +15,7 @@ export default function createVehicle(token, brand, model, fuelType, license, li
 
     if (typeof fuelType !== 'string') throw new TypeError('fuel type is not a string')
     if (!fuelType.length) throw new LengthError('fuel type is empty')
+    if (fuelType !== 'gasolina' && fuelType !== 'diesel') throw new FormatError('fuel type is not diesel or gasolina')
     if (!IS_ALPHABETICAL_REGEX.test(fuelType)) throw new FormatError('fuel type is not alphabetical')
 
     if (typeof license !== 'string') throw new TypeError('license is not a string')
@@ -23,7 +24,7 @@ export default function createVehicle(token, brand, model, fuelType, license, li
 
     if (!(licenseDate instanceof Date)) throw new TypeError('licenseDate is not a date')
 
-    if (!kms && kms !== 0) throw new TypeError('kms is not a number') 
+    if (!kms && kms !== 0) throw new TypeError('kms is not a number')
 
 
     return new Promise((resolve, reject) => {
@@ -51,12 +52,12 @@ export default function createVehicle(token, brand, model, fuelType, license, li
             else if (status === 409) {
                 const { error } = JSON.parse(json)
                 reject(new ConflictError(error))
-            }
-            else
-            reject(new UnexpectedError('server error'))
+            } else if (status < 500) {
+                reject(new UnexpectedError('client error'))
+            } else
+                reject(new UnexpectedError('server error'))
 
         }
-
 
         xhr.onerror = () => reject(new Error('connection error'))
 

@@ -1,6 +1,6 @@
 const retrieveUser = require('../logic/retrieveUser')
 
-const { errors: { FormatError, NotFoundError } } = require('../../com')
+const { errors: { LengthError, NotFoundError } } = require('../../com')
 
 module.exports = (req, res) => {
     try {
@@ -15,7 +15,7 @@ module.exports = (req, res) => {
                     res.status(500).json({ error: error.message })
             })
     } catch (error) {
-        if (error instanceof TypeError || error instanceof FormatError)
+        if (error instanceof TypeError || error instanceof LengthError)
             res.status(400).json({ error: error.message })
         else
             res.status(500).json({ error: error.message })

@@ -12,7 +12,7 @@ export default function Header({ userName }) {
 
     const switchMode = () => document.querySelector('html').classList.toggle('dark')
 
-    return <header className='fixed w-full h-16 mb-4 top-0 flex justify-center items-center gap-2 bg-white dark:bg-black text-black dark:text-white'>
+    return <header className='fixed w-screen h-16 mb-4 top-0 flex justify-center items-center gap-2 bg-yellow-500 dark:bg-black text-black dark:text-white'>
         <div className='flex'>
             <Link to='/'>
                 <img className='w-5 h-5' src='https://www.muycomputer.com/wp-content/uploads/2019/02/secuela-pesadilla-antes-de-navidad-1-1.jpg' />

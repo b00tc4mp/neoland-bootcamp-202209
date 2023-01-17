@@ -26,11 +26,7 @@ module.exports = function (userId, postId) {
                 throw new Error(`post with id ${postId} does not belong to user ${userId}`)
 
             return post.deleteOne({ _id: new ObjectId(postId) })
-        })
-        .then(result => {
-            const { acknowledged } = result
-            if(!acknowledged)throw new Error(`could not delete post with id ${postId}`)
-        })
+        })       
 }
 
 

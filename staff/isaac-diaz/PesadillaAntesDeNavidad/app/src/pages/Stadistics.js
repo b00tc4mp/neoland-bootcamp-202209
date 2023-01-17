@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import Context from '../components/Context'
 import retrieveVehicle from '../logic/retrieveVehicle'
 import { useState, useEffect } from 'react'
 import log from '../utils/coolog'
@@ -7,10 +9,13 @@ import { useParams } from 'react-router-dom'
 import updateVehicle from '../logic/updateVehicle'
 import calculateNextItvDate from '../logic/helpers/calculateNextItvDate'
 import calculateNextCheckOilDate from '../logic/helpers/calculateNextCheckOil'
-import calculateKmsToExpireCheckOil from '../logic/helpers/calculateKmsToExpireCheckOil'
+import { errors } from 'com'
+const { FormatError, LengthError, AuthError, NotFoundError } = errors
 
 export default function Stadistics() {
     log.info('render -> myProfile')
+
+    const { showAlert } = useContext(Context)
 
     const [user, setUser] = useState()
     const [vehicle, setVehicle] = useState()
@@ -28,40 +33,44 @@ export default function Stadistics() {
                     setVehicle(vehicle)
                 })
                 .catch(error => {
-                    alert(error.message)
-
+                    if (error instanceof TypeError || error instanceof FormatError || error instanceof LengthError)
+                        showAlert(error.message, 'warn')
+                    else if (error instanceof AuthError || error instanceof NotFoundError)
+                        showAlert(error.message, 'error')
+                    else
+                        showAlert(error.message, 'fatal')
                 })
         } catch (error) {
-            alert(error.message)
+            if (error instanceof TypeError || error instanceof FormatError || error instanceof LengthError)
+                showAlert(error.message, 'warn')
+            else
+                showAlert(error.message, 'fatal')
         }
-        // try {
-        //     calculateNextItvDate()
-        //     calculateNextCheckOilDate()
-        // } catch (error) {
-        //     alert(error.message)
-        // }
     }, [])
 
     useEffect(() => {
-        if(vehicle && vehicle.licenseDate && vehicle.lastItvDate) {
-            const nextItvDateCalculated = calculateNextItvDate(new Date(vehicle.licenseDate), new Date(vehicle.lastItvDate))
-            const nextCheckDateCalculated = calculateNextCheckOilDate(vehicle.lastOilCheckKms, new Date(vehicle.lastOilCheckDate), new Date(vehicle.licenseDate), vehicle.fuelType)
-            const nextCheckKmsCalculated = calculateKmsToExpireCheckOil(vehicle.lastKms, vehicle.kms, vehicle.fuelType)
+        if (vehicle && vehicle.licenseDate) {
+            const lastItvDateToSent = vehicle.lastItvDate && new Date(vehicle.lastItvDate)
+
+            const nextItvDateCalculated = calculateNextItvDate(
+                new Date(vehicle.licenseDate),
+                lastItvDateToSent
+            )
+
+            const lastCheckOilDateToSend = vehicle.lastOilCheckDate && new Date(vehicle.lastOilCheckDate)
+
+            const nextCheckDateCalculated = calculateNextCheckOilDate(
+                vehicle.lastOilCheckKms,
+                lastCheckOilDateToSend,
+                new Date(vehicle.licenseDate),
+                vehicle.fuelType
+            )
 
             setNextItvDate(nextItvDateCalculated)
             setNextOilCheckDate(nextCheckDateCalculated)
         }
     }, [vehicle])
 
-    // const openEditVisible = () => setEditVehicleVisible(true)
-
-    // const closeEditVisible = () => setEditVehicleVisible(false)
-
-    // const handleEditVehicle = () => {
-
-    // closeEditVisible()
-
-    // }
     const onUpdateVehicle = event => {
         event.preventDefault()
 
@@ -77,19 +86,27 @@ export default function Stadistics() {
                         .then(vehicle => setVehicle(vehicle))
                     // setVehicle({ ...vehicle, brand, model, fulType, license, licenseDate, kms, lastItv, lastCheckOil, tyrePressure })
                 })
-                .catch(error => {
-                    alert(error.message)
-                })
+                .catch (error => {
+                if (error instanceof TypeError || error instanceof LengthError || error instanceof FormatError)
+                    showAlert(error.message, 'warn')
+                else if (error instanceof NotFoundError)
+                    showAlert(error.message, 'error')
+                else
+                    showAlert(error.message, 'fatal')
+            })
         } catch (error) {
-            alert(error.message)
+            if (error instanceof TypeError || error instanceof LengthError || error instanceof FormatError)
+                showAlert(error.message, 'warn')
+            else
+                showAlert(error.message, 'fatal')
         }
     }
 
-    return <main className='h-full flex items-center justify-center mt-6 border-4'>
+    return <main className='h-full bg-red-400 flex items-center justify-center mt-6'>
         {user && <Header userName={user.name} />}
         {/* {editVehicleVisible && <EditVehicle onClose={closeEditVisible} onEdited={handleEditVehicle} />} */}
-        <form onSubmit={onUpdateVehicle} className='flex items-center justify-center border-black'>
-            <div className='flex flex-col border-2'>
+        <form onSubmit={onUpdateVehicle} className='flex flex-col items-center justify-center mt-36 border-black'>
+            <div className='flex flex-col border-2 gap-2 mt-32'>
                 <h2>Brand</h2>
                 <input required name='brand' id='brand' type='text' defaultValue={vehicle?.brand} />
                 <h2>Model</h2>
@@ -100,7 +117,7 @@ export default function Stadistics() {
                     <option name='diesel' type='text' id='diesel' value='diesel'>diesel</option>
                 </select>
             </div>
-            <div className='flex flex-col border-2'>
+            <div className='flex flex-col border-2 gap-2'>
                 <h2>license</h2>
                 <input required name='license' id='license' type='text' defaultValue={vehicle?.license} />
                 <h2>licenseDate</h2>
@@ -108,26 +125,28 @@ export default function Stadistics() {
                 <h2>kms</h2>
                 <input required name='kms' id='kms' type='number' defaultValue={vehicle?.kms} />
             </div>
-            <div className='border-2'>
+            <div className='flex flex-col border-2 gap-2'>
                 <h2>Last check oil date</h2>
-                <input required name='lastOilCheckDate' id='lastOilCheckDate' type='Date' defaultValue={vehicle?.lastOilCheckDate?.slice(0, -14)} />
+                <input name='lastOilCheckDate' id='lastOilCheckDate' type='Date' defaultValue={vehicle?.lastOilCheckDate?.slice(0, -14)} />
                 <h2>Last check oil kms</h2>
-                <input required name='lastOilCheckKms' id='lastOilCheckKms' type='number' defaultValue={vehicle?.lastOilCheckKms} />
+                <input name='lastOilCheckKms' id='lastOilCheckKms' type='number' defaultValue={vehicle?.lastOilCheckKms} />
                 <h2>Next check Oil Date</h2>
                 {nextOilCheckDate && <p>{nextOilCheckDate.nextOilCheckDate.toISOString().slice(0, -14).split('-').reverse().join('/')}</p>}
                 <h2>Next ckeck Oil Kms</h2>
                 {nextOilCheckDate && <p>{nextOilCheckDate.nextOilCheckKms}</p>}
+            </div>
+            <div className='flex flex-col border-2 gap-2'>
                 <h2>Last ITV</h2>
-                <input required name='lastItvDate' id='lastItvDate' type='Date' defaultValue={vehicle?.lastItvDate?.slice(0, -14)} />
+                <input name='lastItvDate' id='lastItvDate' type='Date' defaultValue={vehicle?.lastItvDate?.slice(0, -14)} />
                 <h2>Next ITV</h2>
-                {nextItvDate && <p>{nextItvDate.toISOString()}</p>}                
-                <h2>tire pressure front</h2>
+                {nextItvDate && <p>{nextItvDate.toISOString().slice(0, -17).split('-').reverse().join('/')}</p>}
+                <h2>Tyre pressure front</h2>
                 <input required name='tyrePressureFront' id='tyrePressureFront' type='text' defaultValue={vehicle?.tyrePressureFront} />
-                <h2>tire pressure rear</h2>
+                <h2>Tyre pressure rear</h2>
                 <input required name='tyrePressureRear' id='tyrePressureRear' type='text' defaultValue={vehicle?.tyrePressureRear} />
             </div>
             <div>
-                <button className='border-black'>Update</button>
+                <button className='border-black p-8'>Update</button>
             </div>
         </form>
     </main>

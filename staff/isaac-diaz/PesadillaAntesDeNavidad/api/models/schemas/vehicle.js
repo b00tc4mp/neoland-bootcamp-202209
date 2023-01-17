@@ -17,6 +17,7 @@ module.exports = new Schema({
     },
     fuelType: {
         type: String,
+        enum: ['gasolina', 'diesel'],
         required: true
     },
     license: {

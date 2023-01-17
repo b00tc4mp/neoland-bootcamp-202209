@@ -12,7 +12,7 @@ export default function({ userName }) {
 
    const { logout } = useContext(Context)
 
-   const switchMode = () => document.querySelector('html').classList.toggle('dark')
+//    const switchMode = () => document.querySelector('html').classList.toggle('dark')
 
    const userId = extractSubFromToken(sessionStorage.token)
 
@@ -20,7 +20,6 @@ export default function({ userName }) {
         <Link to={`/profile/${userId}`}>{userName}</Link>
 
         <button onClick={logout}><AiOutlineLogout /> </button>
-
-        <button onClick={switchMode}><IoInvertModeOutline /></button>
+        {/* <button onClick={switchMode}><IoInvertModeOutline /></button> */}
         </header>
 } 

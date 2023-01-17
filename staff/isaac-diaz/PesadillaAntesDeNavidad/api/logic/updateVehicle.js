@@ -32,11 +32,14 @@ module.exports = function (userId, vehicleId, brand, model, fuelType, license, l
 
     if (typeof kms !== 'number') throw new TypeError('kms is not a number')
 
-    if (!(lastOilCheckDate instanceof Date)) throw new TypeError('last oil check date is not a Date')
+    if (lastOilCheckDate)
+        if (!(lastOilCheckDate instanceof Date)) throw new TypeError('last oil check date is not a Date')
 
-    if (typeof lastOilCheckKms !== 'number') throw new TypeError('last oil check kms is not a number')
+    if (lastOilCheckKms)
+        if (typeof lastOilCheckKms !== 'number') throw new TypeError('last oil check kms is not a number')
 
-    if (!(lastItvDate instanceof Date)) throw new TypeError('last itv date is not a Date')
+    if (lastItvDate)
+        if (!(lastItvDate instanceof Date)) throw new TypeError('last itv date is not a Date')
 
     if (typeof tyrePressureFront !== 'string') throw new TypeError('tyre pressure front is not a string')
     if (!tyrePressureFront.length) throw new LengthError('tyre pressure front is empty')
@@ -53,8 +56,18 @@ module.exports = function (userId, vehicleId, brand, model, fuelType, license, l
         .then(vehicle => {
             if (!vehicle) throw new NotFoundError(`vehicle with id ${vehicleId} does not exist`)
 
-            const data = { brand, model, fuelType, license, licenseDate: new Date(licenseDate), kms, lastOilCheckDate: new Date(lastOilCheckDate),
-                 lastOilCheckKms, lastItvDate: new Date(lastItvDate), tyrePressureFront, tyrePressureRear }
+            const data = {
+                brand, model, fuelType, license, licenseDate, kms, tyrePressureFront, tyrePressureRear
+            }
+
+            if (lastOilCheckDate)
+                data.lastOilCheckDate = lastOilCheckDate
+
+            if (lastOilCheckKms)
+                data.lastOilCheckKms = lastOilCheckKms
+
+            if (lastItvDate)
+                data.lastItvDate = lastItvDate
 
             return Vehicle.updateOne({ _id: vehicleId }, { $set: data })
         })

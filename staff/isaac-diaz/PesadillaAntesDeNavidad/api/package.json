@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "chai": "^4.3.7",
     "com": "file:../com",
     "dotenv": "^16.0.3",

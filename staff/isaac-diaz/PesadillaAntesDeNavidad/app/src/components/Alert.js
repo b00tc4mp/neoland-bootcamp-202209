@@ -1,6 +1,6 @@
 import Button from './Button'
 
-export default function Alert({ message, level = 'error', onClose }) {
+export default function showAlert({ message, level = 'error', onClose }) {
     const color = level === 'fatal' || level === 'error' ? 'red' : level === 'warn' ? 'gold' : level === 'info' ? 'blue' : 'green'
 
     return <div className='bg-[#aaa] fixed top-0 h-full w-full flex flex-col justify-center items-center overflow-hidden' onClick={onClose}>
