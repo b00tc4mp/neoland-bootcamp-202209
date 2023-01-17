@@ -1,0 +1,72 @@
+[
+    {
+        "id": "post-1",
+        "user": "user-1",
+        "text": "bla bla bla",
+        "date": "2022-12-17T12:18:31.429Z",
+        "visibility": "public"
+    },
+    {
+        "id": "post-2",
+        "user": "user-2",
+        "text": "ble ble ble",
+        "date": "2022-12-27T12:18:31.429Z",
+        "visibility": "private"
+    },
+    {
+        "id": "post-4",
+        "user": "user-3",
+        "text": "blos blos blos",
+        "visibility": "private",
+        "date": "2022-11-20T19:15:33.202Z"
+    },
+    {
+        "id": "post-5",
+        "user": "user-3",
+        "text": "blos blos blos",
+        "visibility": "private",
+        "date": "2022-11-23T19:30:35.338Z"
+    },
+    {
+        "id": "post-6",
+        "user": "user-3",
+        "text": "el code me estresa",
+        "visibility": "private",
+        "date": "2022-11-23T19:31:18.362Z"
+    },
+    {
+        "id": "post-7",
+        "user": "user-3",
+        "text": "manu sueño contigo que me has dado",
+        "visibility": "private",
+        "date": "2022-11-23T19:32:03.924Z"
+    },
+    {
+        "id": "post-8",
+        "user": "user-3",
+        "text": "manu kruger",
+        "visibility": "public",
+        "date": "2022-11-23T19:32:52.078Z"
+    },
+    {
+        "id": "post-9",
+        "user": "user-3",
+        "text": "pollo, ternera, completo?",
+        "visibility": "public",
+        "date": "2022-11-26T21:50:59.934Z"
+    },
+    {
+        "id": "post-10",
+        "user": "user-7",
+        "text": "Cuando era gusano!! Que recuerdos!\n",
+        "visibility": "public",
+        "date": "2022-11-26T21:56:24.689Z"
+    },
+    {
+        "id": "post-11",
+        "user": "user-10",
+        "text": "No seas mentiroso!!\n",
+        "visibility": "public",
+        "date": "2022-11-28T07:43:51.141Z"
+    }
+]

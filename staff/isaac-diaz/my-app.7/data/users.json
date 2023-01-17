@@ -1,0 +1,32 @@
+[
+    {
+        "id": "user-1",
+        "name": "Peter Pan",
+        "email": "peter@pan.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-2",
+        "name": "Wendy Darling",
+        "email": "wendy@darling.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-3",
+        "name": "Ga Tito",
+        "email": "ga@tito.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-4",
+        "name": "Per Rito",
+        "email": "per@rito.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-5",
+        "name": "Lo Rito",
+        "email": "lo@rito.com",
+        "password": "123123123"
+    }
+]

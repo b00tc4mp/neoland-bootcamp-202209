@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <cat>
+        <image>https://http.cat/images/100.jpg</image>
+        <code>100</code>
+        <text>Continue</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/101.jpg</image>
+        <code>101</code>
+        <text>Switching Protocols</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/102.jpg</image>
+        <code>102</code>
+        <text>Processing</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/200.jpg</image>
+        <code>200</code>
+        <text>OK</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/201.jpg</image>
+        <code>201</code>
+        <text>Created</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/202.jpg</image>
+        <code>202</code>
+        <text>Accepted</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/203.jpg</image>
+        <code>203</code>
+        <text>Non-Authoritative Information</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/204.jpg</image>
+        <code>204</code>
+        <text>No Content</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/206.jpg</image>
+        <code>206</code>
+        <text>Partial Content</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/207.jpg</image>
+        <code>207</code>
+        <text>Multi-Status</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/300.jpg</image>
+        <code>300</code>
+        <text>Multiple Choices</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/301.jpg</image>
+        <code>301</code>
+        <text>Moved Permanently</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/302.jpg</image>
+        <code>302</code>
+        <text>Found</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/303.jpg</image>
+        <code>303</code>
+        <text>See Other</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/304.jpg</image>
+        <code>304</code>
+        <text>Not Modified</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/305.jpg</image>
+        <code>305</code>
+        <text>Use Proxy</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/307.jpg</image>
+        <code>307</code>
+        <text>Temporary Redirect</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/308.jpg</image>
+        <code>308</code>
+        <text>Permanent Redirect</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/400.jpg</image>
+        <code>400</code>
+        <text>Bad Request</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/401.jpg</image>
+        <code>401</code>
+        <text>Unauthorized</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/402.jpg</image>
+        <code>402</code>
+        <text>Payment Required</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/403.jpg</image>
+        <code>403</code>
+        <text>Forbidden</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/404.jpg</image>
+        <code>404</code>
+        <text>Not Found</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/405.jpg</image>
+        <code>405</code>
+        <text>Method Not Allowed</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/406.jpg</image>
+        <code>406</code>
+        <text>Not Acceptable</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/407.jpg</image>
+        <code>407</code>
+        <text>Proxy Authentication Required</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/408.jpg</image>
+        <code>408</code>
+        <text>Request Timeout</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/409.jpg</image>
+        <code>409</code>
+        <text>Conflict</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/410.jpg</image>
+        <code>410</code>
+        <text>Gone</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/411.jpg</image>
+        <code>411</code>
+        <text>Length Required</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/412.jpg</image>
+        <code>412</code>
+        <text>Precondition Failed</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/413.jpg</image>
+        <code>413</code>
+        <text>Payload Too Large</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/414.jpg</image>
+        <code>414</code>
+        <text>Request-URI Too Long</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/415.jpg</image>
+        <code>415</code>
+        <text>Unsupported Media Type</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/416.jpg</image>
+        <code>416</code>
+        <text>Request Range Not Satisfiable</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/417.jpg</image>
+        <code>417</code>
+        <text>Expectation Failed</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/418.jpg</image>
+        <code>418</code>
+        <text>I’m a teapot</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/420.jpg</image>
+        <code>420</code>
+        <text>Enhance Your Calm</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/421.jpg</image>
+        <code>421</code>
+        <text>Misdirected Request</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/422.jpg</image>
+        <code>422</code>
+        <text>Unprocessable Entity</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/423.jpg</image>
+        <code>423</code>
+        <text>Locked</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/424.jpg</image>
+        <code>424</code>
+        <text>Failed Dependency</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/425.jpg</image>
+        <code>425</code>
+        <text>Too Early</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/426.jpg</image>
+        <code>426</code>
+        <text>Upgrade Required</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/429.jpg</image>
+        <code>429</code>
+        <text>Too Many Requests</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/431.jpg</image>
+        <code>431</code>
+        <text>Request Header Fields Too Large</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/444.jpg</image>
+        <code>444</code>
+        <text>No Response</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/450.jpg</image>
+        <code>450</code>
+        <text>Blocked by Windows Parental Controls</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/451.jpg</image>
+        <code>451</code>
+        <text>Unavailable For Legal Reasons</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/497.jpg</image>
+        <code>497</code>
+        <text>HTTP Request Sent to HTTPS Port</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/498.jpg</image>
+        <code>498</code>
+        <text>Token expired/invalid</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/499.jpg</image>
+        <code>499</code>
+        <text>Client Closed Request</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/500.jpg</image>
+        <code>500</code>
+        <text>Internal Server Error</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/501.jpg</image>
+        <code>501</code>
+        <text>Not Implemented</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/502.jpg</image>
+        <code>502</code>
+        <text>Bad Gateway</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/503.jpg</image>
+        <code>503</code>
+        <text>Service Unavailable</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/504.jpg</image>
+        <code>504</code>
+        <text>Gateway Timeout</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/506.jpg</image>
+        <code>506</code>
+        <text>Variant Also Negotiates</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/507.jpg</image>
+        <code>507</code>
+        <text>Insufficient Storage</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/508.jpg</image>
+        <code>508</code>
+        <text>Loop Detected</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/509.jpg</image>
+        <code>509</code>
+        <text>Bandwidth Limit Exceeded</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/510.jpg</image>
+        <code>510</code>
+        <text>Not Extended</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/511.jpg</image>
+        <code>511</code>
+        <text>Network Authentication Required</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/521.jpg</image>
+        <code>521</code>
+        <text>Web Server Is Down</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/522.jpg</image>
+        <code>522</code>
+        <text>Connection Timed Out</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/523.jpg</image>
+        <code>523</code>
+        <text>Origin Is Unreachable</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/525.jpg</image>
+        <code>525</code>
+        <text>SSL Handshake Failed</text>
+    </cat>
+    <cat>
+        <image>https://http.cat/images/599.jpg</image>
+        <code>599</code>
+        <text>Network Connect Timeout Error</text>
+    </cat>
+</results>
