@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+        <channel>
+            <title>HTTP &amp; Cats</title>
+            <description>Meow</description>
+            <link>https://http.cat</link>    <item>
+                <title>100</title>
+                <description>Continue</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/100.jpg" />
+                </item>
+                    <item>
+                <title>101</title>
+                <description>Switching Protocols</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/101.jpg" />
+                </item>
+                    <item>
+                <title>102</title>
+                <description>Processing</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/102.jpg" />
+                </item>
+                    <item>
+                <title>200</title>
+                <description>OK</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/200.jpg" />
+                </item>
+                    <item>
+                <title>201</title>
+                <description>Created</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/201.jpg" />
+                </item>
+                    <item>
+                <title>202</title>
+                <description>Accepted</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/202.jpg" />
+                </item>
+                    <item>
+                <title>203</title>
+                <description>Non-Authoritative Information</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/203.jpg" />
+                </item>
+                    <item>
+                <title>204</title>
+                <description>No Content</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/204.jpg" />
+                </item>
+                    <item>
+                <title>206</title>
+                <description>Partial Content</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/206.jpg" />
+                </item>
+                    <item>
+                <title>207</title>
+                <description>Multi-Status</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/207.jpg" />
+                </item>
+                    <item>
+                <title>300</title>
+                <description>Multiple Choices</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/300.jpg" />
+                </item>
+                    <item>
+                <title>301</title>
+                <description>Moved Permanently</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/301.jpg" />
+                </item>
+                    <item>
+                <title>302</title>
+                <description>Found</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/302.jpg" />
+                </item>
+                    <item>
+                <title>303</title>
+                <description>See Other</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/303.jpg" />
+                </item>
+                    <item>
+                <title>304</title>
+                <description>Not Modified</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/304.jpg" />
+                </item>
+                    <item>
+                <title>305</title>
+                <description>Use Proxy</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/305.jpg" />
+                </item>
+                    <item>
+                <title>307</title>
+                <description>Temporary Redirect</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/307.jpg" />
+                </item>
+                    <item>
+                <title>308</title>
+                <description>Permanent Redirect</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/308.jpg" />
+                </item>
+                    <item>
+                <title>400</title>
+                <description>Bad Request</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/400.jpg" />
+                </item>
+                    <item>
+                <title>401</title>
+                <description>Unauthorized</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/401.jpg" />
+                </item>
+                    <item>
+                <title>402</title>
+                <description>Payment Required</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/402.jpg" />
+                </item>
+                    <item>
+                <title>403</title>
+                <description>Forbidden</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/403.jpg" />
+                </item>
+                    <item>
+                <title>404</title>
+                <description>Not Found</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/404.jpg" />
+                </item>
+                    <item>
+                <title>405</title>
+                <description>Method Not Allowed</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/405.jpg" />
+                </item>
+                    <item>
+                <title>406</title>
+                <description>Not Acceptable</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/406.jpg" />
+                </item>
+                    <item>
+                <title>407</title>
+                <description>Proxy Authentication Required</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/407.jpg" />
+                </item>
+                    <item>
+                <title>408</title>
+                <description>Request Timeout</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/408.jpg" />
+                </item>
+                    <item>
+                <title>409</title>
+                <description>Conflict</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/409.jpg" />
+                </item>
+                    <item>
+                <title>410</title>
+                <description>Gone</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/410.jpg" />
+                </item>
+                    <item>
+                <title>411</title>
+                <description>Length Required</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/411.jpg" />
+                </item>
+                    <item>
+                <title>412</title>
+                <description>Precondition Failed</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/412.jpg" />
+                </item>
+                    <item>
+                <title>413</title>
+                <description>Payload Too Large</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/413.jpg" />
+                </item>
+                    <item>
+                <title>414</title>
+                <description>Request-URI Too Long</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/414.jpg" />
+                </item>
+                    <item>
+                <title>415</title>
+                <description>Unsupported Media Type</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/415.jpg" />
+                </item>
+                    <item>
+                <title>416</title>
+                <description>Request Range Not Satisfiable</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/416.jpg" />
+                </item>
+                    <item>
+                <title>417</title>
+                <description>Expectation Failed</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/417.jpg" />
+                </item>
+                    <item>
+                <title>418</title>
+                <description>I’m a teapot</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/418.jpg" />
+                </item>
+                    <item>
+                <title>420</title>
+                <description>Enhance Your Calm</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/420.jpg" />
+                </item>
+                    <item>
+                <title>421</title>
+                <description>Misdirected Request</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/421.jpg" />
+                </item>
+                    <item>
+                <title>422</title>
+                <description>Unprocessable Entity</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/422.jpg" />
+                </item>
+                    <item>
+                <title>423</title>
+                <description>Locked</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/423.jpg" />
+                </item>
+                    <item>
+                <title>424</title>
+                <description>Failed Dependency</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/424.jpg" />
+                </item>
+                    <item>
+                <title>425</title>
+                <description>Too Early</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/425.jpg" />
+                </item>
+                    <item>
+                <title>426</title>
+                <description>Upgrade Required</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/426.jpg" />
+                </item>
+                    <item>
+                <title>429</title>
+                <description>Too Many Requests</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/429.jpg" />
+                </item>
+                    <item>
+                <title>431</title>
+                <description>Request Header Fields Too Large</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/431.jpg" />
+                </item>
+                    <item>
+                <title>444</title>
+                <description>No Response</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/444.jpg" />
+                </item>
+                    <item>
+                <title>450</title>
+                <description>Blocked by Windows Parental Controls</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/450.jpg" />
+                </item>
+                    <item>
+                <title>451</title>
+                <description>Unavailable For Legal Reasons</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/451.jpg" />
+                </item>
+                    <item>
+                <title>497</title>
+                <description>HTTP Request Sent to HTTPS Port</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/497.jpg" />
+                </item>
+                    <item>
+                <title>498</title>
+                <description>Token expired/invalid</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/498.jpg" />
+                </item>
+                    <item>
+                <title>499</title>
+                <description>Client Closed Request</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/499.jpg" />
+                </item>
+                    <item>
+                <title>500</title>
+                <description>Internal Server Error</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/500.jpg" />
+                </item>
+                    <item>
+                <title>501</title>
+                <description>Not Implemented</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/501.jpg" />
+                </item>
+                    <item>
+                <title>502</title>
+                <description>Bad Gateway</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/502.jpg" />
+                </item>
+                    <item>
+                <title>503</title>
+                <description>Service Unavailable</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/503.jpg" />
+                </item>
+                    <item>
+                <title>504</title>
+                <description>Gateway Timeout</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/504.jpg" />
+                </item>
+                    <item>
+                <title>506</title>
+                <description>Variant Also Negotiates</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/506.jpg" />
+                </item>
+                    <item>
+                <title>507</title>
+                <description>Insufficient Storage</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/507.jpg" />
+                </item>
+                    <item>
+                <title>508</title>
+                <description>Loop Detected</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/508.jpg" />
+                </item>
+                    <item>
+                <title>509</title>
+                <description>Bandwidth Limit Exceeded</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/509.jpg" />
+                </item>
+                    <item>
+                <title>510</title>
+                <description>Not Extended</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/510.jpg" />
+                </item>
+                    <item>
+                <title>511</title>
+                <description>Network Authentication Required</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/511.jpg" />
+                </item>
+                    <item>
+                <title>521</title>
+                <description>Web Server Is Down</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/521.jpg" />
+                </item>
+                    <item>
+                <title>522</title>
+                <description>Connection Timed Out</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/522.jpg" />
+                </item>
+                    <item>
+                <title>523</title>
+                <description>Origin Is Unreachable</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/523.jpg" />
+                </item>
+                    <item>
+                <title>525</title>
+                <description>SSL Handshake Failed</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/525.jpg" />
+                </item>
+                    <item>
+                <title>599</title>
+                <description>Network Connect Timeout Error</description>
+                <media:content type="image/jpeg" medium="image" url="https://http.cat/images/599.jpg" />
+                </item>
+                    </channel>
+            </rss>

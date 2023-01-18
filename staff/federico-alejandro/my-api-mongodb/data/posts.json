@@ -1,0 +1,93 @@
+[
+    {
+        "id": "post-1",
+        "user": "user-1",
+        "text": "blah blah blah",
+        "date": "2022-12-17T12:18:31.429Z",
+        "visibility": "public"
+    },
+    {
+        "id": "post-2",
+        "user": "user-2",
+        "text": "bleh bleh bleh",
+        "date": "2022-11-27T12:18:31.429Z",
+        "visibility": "private"
+    },
+    {
+        "id": "post-3",
+        "user": "user-3",
+        "text": "blih blih blih",
+        "date": "2022-12-01T12:18:31.429Z",
+        "visibility": "public"
+    },
+    {
+        "id": "post-5",
+        "user": "user-3",
+        "text": "blah blah blah",
+        "date": "2022-12-01T12:18:31.429Z",
+        "visibility": "private"
+    },
+    {
+        "id": "post-7",
+        "user": "user-11",
+        "text": "hola jueves ",
+        "visibility": "public",
+        "date": "2022-11-24T06:52:24.306Z"
+    },
+    {
+        "id": "post-8",
+        "user": "user-11",
+        "text": "hola hola",
+        "visibility": "public",
+        "date": "2022-11-21T20:50:36.736Z"
+    },
+    {
+        "id": "post-9",
+        "user": "user-12",
+        "text": "miercoles",
+        "visibility": "private",
+        "date": "2022-11-23T14:18:45.824Z"
+    },
+    {
+        "id": "post-10",
+        "user": "user-12",
+        "text": "post publico",
+        "visibility": "public",
+        "date": "2022-11-23T14:19:26.412Z"
+    },
+    {
+        "id": "post-11",
+        "user": "user-11",
+        "text": "no era off-side",
+        "visibility": "public",
+        "date": "2022-11-23T20:56:32.960Z"
+    },
+    {
+        "id": "post-12",
+        "user": "user-12",
+        "text": "no funciona",
+        "visibility": "public",
+        "date": "2022-11-24T21:33:28.923Z"
+    },
+    {
+        "id": "post-13",
+        "user": "user-1",
+        "text": "aaauuchis",
+        "visibility": "public",
+        "date": "2022-11-25T08:48:42.267Z"
+    },
+    {
+        "id": "post-14",
+        "user": "user-1",
+        "text": "primer post privado",
+        "visibility": "private",
+        "date": "2022-11-25T08:49:37.567Z"
+    },
+    {
+        "id": "post-15",
+        "user": "user-12",
+        "text": "post privado",
+        "visibility": "private",
+        "date": "2022-11-25T11:19:36.467Z"
+    }
+]

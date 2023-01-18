@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Pepito",
+        "surname": "Grillo",
+        "email": "pepito@grillo.com",
+        "phone": "+34 123123123"
+    },
+    {
+        "name": "Wendy",
+        "surname": "Darling",
+        "email": "wendy@darling.com",
+        "phone": "+34 123123124"
+    },
+    {
+        "name": "Peter",
+        "surname": "Pan",
+        "email": "peter@pan.com",
+        "phone": "+34 123123125"
+    },
+    {
+        "name": "Cu",
+        "surname": "Lebron",
+        "email": "cu@lebron.com",
+        "phone": "+34 123123126"
+    },
+    {
+        "name": "Pata",
+        "surname": "Nata",
+        "email": "pata@nata.com",
+        "phone": "+34 123123127"
+    },
+    {
+        "name": "Lula",
+        "surname": "Capa",
+        "email": "lula@capa.com",
+        "phone": "+54 34534545"
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "user-1",
+        "name": "Peter Pan",
+        "email": "peter@pan.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-2",
+        "name": "Wendy Darling",
+        "email": "wendy@darling.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-3",
+        "name": "Ga Tito",
+        "email": "ga@tito.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-4",
+        "name": "Per Rito",
+        "email": "per@rito.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-5",
+        "name": "Lo Rito",
+        "email": "lo@rito.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-6",
+        "name": "Gu Sanito",
+        "email": "gu@sanito.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-7",
+        "name": "Mari Posa",
+        "email": "mari@posa.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-8",
+        "name": "Cucu Rucho",
+        "email": "cucu@rucho.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-9",
+        "name": "Ana Conda",
+        "email": "ana@conda.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-10",
+        "name": "mier coles",
+        "email": "mier@coles.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-11",
+        "name": "Fede",
+        "email": "fede@fede.com",
+        "password": "123123123"
+    },
+    {
+        "id": "user-12",
+        "name": "Pepito Grillo",
+        "email": "pepito@grillo.com",
+        "password": "123123123"
+    }
+]

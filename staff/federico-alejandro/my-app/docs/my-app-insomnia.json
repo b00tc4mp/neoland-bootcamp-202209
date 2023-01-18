@@ -1,0 +1,255 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-11-15T09:09:39.566Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_1b87087b31bf4bc288a9363da39359f1",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668501473298,
+            "created": 1668156891300,
+            "url": "http://localhost/login",
+            "name": "login",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1668156891300,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "parentId": null,
+            "modified": 1668156887905,
+            "created": 1668156887905,
+            "name": "my-app",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_6158a585952a436f9d0fb6038b6b26ea",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668502288579,
+            "created": 1668501787446,
+            "url": "http://localhost/login",
+            "name": "login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_58eedd30d7db4c9fb8db1f3080e976c2",
+                        "name": "email",
+                        "value": "peter@pan.com",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_0d6aeddbc5c6408eaa2f8d201d842caa",
+                        "name": "password",
+                        "value": "123123123",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1668075761669,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9e05ba68cde64b4489ff38371d55c350",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668502519322,
+            "created": 1668502376607,
+            "url": "http://localhost/logout",
+            "name": "logout",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1668075761644,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3068fa62218b4432bddf70d63f7d4578",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668502644396,
+            "created": 1668502627301,
+            "url": "http://localhost/register",
+            "name": "register",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1668075761631.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ee0be8101bb74c52830c4876801ee8fe",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668502683751,
+            "created": 1668502338835,
+            "url": "http://localhost/register",
+            "name": "register",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_6c5256d91c2d4b279bbd06682b2dd9fd",
+                        "name": "name",
+                        "value": "Mari Posa",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_ada694b0d5a249c0a9ecc15b17bdb8bd",
+                        "name": "email",
+                        "value": "mari@posa.com",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_7e2ef04355b2443db5f1d612bd9e9253",
+                        "name": "password",
+                        "value": "123123123",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1668075761619,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b0c6c50520194a50b8b2732a5a58a5d8",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668503272819,
+            "created": 1668502761116,
+            "url": "http://localhost/search",
+            "name": "search",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_208098bda1814ece917923da3a8f22c2",
+                    "name": "q",
+                    "value": "101",
+                    "description": ""
+                }
+            ],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1668075761569,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_68ef84a3540fcc8b80cf0b09e63ea9a8832126a5",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668156887911,
+            "created": 1668156887911,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1668156887912,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_68ef84a3540fcc8b80cf0b09e63ea9a8832126a5",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668502784764,
+            "created": 1668156887913,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "id",
+                    "value": "user-1",
+                    "domain": "localhost",
+                    "path": "/",
+                    "hostOnly": true,
+                    "pathIsDefault": true,
+                    "creation": "2022-11-15T08:59:44.764Z",
+                    "lastAccessed": "2022-11-15T08:59:44.764Z",
+                    "id": "39743852391795165"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_5ea03fc57b014e13ba76135ec652932c",
+            "parentId": "wrk_b9a1c549ee984e28af6c9b33332aa849",
+            "modified": 1668156887906,
+            "created": 1668156887906,
+            "fileName": "my-app",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
