@@ -4,14 +4,17 @@ import retrieveUser from '../logic/retrieveUser'
 import Header from '../components/Header'
 import { useContext } from 'react'
 import Context from '../components/Context'
+import Maps from '../components/Maps'
+import NavBar from '../components/NavBar'
 import { errors } from 'com'
 const { FormatError, AuthError, LengthError, NotFoundError } = errors
 
 function Home() {
+    console.log(sessionStorage)
     log.info('Home -> render')
 
     const [user, setUser] = useState()
-    const { showAlert } = useContext(Context)
+    const { showAlert,logout } = useContext(Context)
 
     useEffect(() => {
         try {
@@ -32,10 +35,15 @@ function Home() {
                 showAlert(error.message, 'fatal')
         }
     }, [])
-
-    return <main className="overflow-hidden bg-white dark:bg-black text-black dark:text-white">
-        {user && <Header userName={user.name} />}
-    </main>
+    console.log(user)
+    return  <div>
+               
+                <Maps />
+            </div>
 }
 
 export default Home
+
+
+//Prueba de Home
+

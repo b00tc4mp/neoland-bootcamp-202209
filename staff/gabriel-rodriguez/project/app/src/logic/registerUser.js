@@ -12,6 +12,7 @@ const { FormatError, LengthError, ConflictError, UnexpectedError } = errors
  * @param {string} password The user password
  */
 export default function registerUser(name, email, password) {
+    
     if (typeof name !== 'string') throw new Error('name is not a string')
     if (!IS_ALPHABETICAL_REGEX.test(name)) throw new Error('name is not alphabetical')
     if (name.length < 1) throw new LengthError('name length is less than 1')
@@ -24,6 +25,7 @@ export default function registerUser(name, email, password) {
     if (HAS_SPACES_REGEX.test(password)) throw new Error('password has spaces')
 
     return new Promise((resolve, reject) => {
+
         const xhr = new XMLHttpRequest()
 
         xhr.onload = () => {
@@ -52,7 +54,7 @@ export default function registerUser(name, email, password) {
 
         xhr.onerror = () => reject(new Error('connection error'))
 
-        xhr.open('POST', 'http://localhost/users')
+        xhr.open('POST', 'http://127.0.0.1:3001/users')
         xhr.setRequestHeader('Content-Type', 'application/json')
 
         const payload = { name, email, password }

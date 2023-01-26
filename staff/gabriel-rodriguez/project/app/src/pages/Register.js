@@ -18,7 +18,7 @@ function Register() {
         event.preventDefault()
 
         const { name: { value: name }, email: { value: email }, password: { value: password } } = event.target
-
+        
         try {
             registerUser(name, email, password)
                 .then(() => navigate('/login'))
@@ -31,25 +31,38 @@ function Register() {
                         showAlert(error.message, 'fatal')
                 })
         } catch (error) {
+
             showAlert(error.message, 'warn')
 
             event.target.password.value = ''
         }
     }
 
-    return <main className="h-full flex flex-col items-center justify-center gap-2 bg-white dark:bg-black text-black dark:text-white">
-        <form className="flex flex-col gap-2" onSubmit={handleRegister}>
-            <label htmlFor="name" className="container__item--left">Name</label>
-            <input name="name" type="text" id="name" placeholder="input your name" className="border-b border-black text-black" />
-            <label htmlFor="email" className="container__item--left">E-mail</label>
-            <input name="email" type="email" id="email" placeholder="input your e-mail" className="border-b border-black text-black" />
-            <label htmlFor="password" className="container__item--left">Password</label>
-            <input name="password" type="password" id="password" placeholder="input your password" className="border-b border-black text-black" />
-            <button className="p-2 border rounded-xl hover:animate-spin">Register</button>
-        </form>
+    return <center>
+                <main class="form-signin w-100 m-auto">
+                    <form onSubmit={handleRegister}>
+                    
+                    <h1 class="h3 mb-3 fw-normal">Registro</h1>
+                    <div class="form-floating">
+                        <input type="name" name="name" class="form-control inputForm" id="floatingInput" placeholder="Nombre ..." />
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" name="email" class="form-control inputForm" id="floatingInput" placeholder="name@example.com" />
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" name="password" class="form-control inputForm" id="floatingPassword" placeholder="Contraseña ..."/>
+                        
+                    </div>
+                
+                    
+                    <button className="p-2 border rounded-xl hover:animate-spin">Registro</button>
+                    
+                    </form>
+                    <Link to="/login" className="underline">Login</Link>
+                </main>
+            </center>
 
-        <Link to="/login" className="underline">Login</Link>
-    </main>
+    
 }
 
 export default Register

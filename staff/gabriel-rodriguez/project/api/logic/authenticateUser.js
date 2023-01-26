@@ -25,7 +25,6 @@ function authenticateUser(email, password) {
 
             if (user.password !== password)
                 throw new AuthError('wrong password')
-
             return user.id
         })
 }

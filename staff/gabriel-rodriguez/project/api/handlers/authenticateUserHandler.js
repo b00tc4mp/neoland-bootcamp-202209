@@ -11,7 +11,7 @@ module.exports = (req, res) => {
         authenticateUser(email, password)
             .then(userId => {
                 const payload = { sub: userId }
-
+              
                 const token = jwt.sign(payload, JWT_SECRET, { expiresIn: JWT_EXPIRATION })
 
                 res.json({ token })
@@ -24,6 +24,8 @@ module.exports = (req, res) => {
                 else
                     res.status(500).json({ error: error.message })
             })
+
+           
     } catch (error) {
         if (error instanceof TypeError || error instanceof FormatError || error instanceof LengthError)
             res.status(400).json({ error: error.message })

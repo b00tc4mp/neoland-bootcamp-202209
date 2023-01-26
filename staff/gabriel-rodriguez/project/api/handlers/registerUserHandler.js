@@ -3,9 +3,10 @@ const registerUser = require('../logic/registerUser')
 const { errors: { FormatError, LengthError, ConflictError } } = require('../../com')
 
 module.exports = (req, res) => {
+    console.log(req)
     try {
         const { name, email, password } = req.body
-
+        console.log(name,email,password)
         registerUser(name, email, password)
             .then(() => res.status(201).send())
             .catch(error => {
